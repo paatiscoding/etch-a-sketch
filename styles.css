@@ -1,14 +1,18 @@
-header h1 {
-    text-align:center;
+header {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
+
 
 nav {
     display:flex;
     flex-direction:column;
+    justify-content:space-around;
 }
 .container {
     display:flex;
-    border:5px solid red;
     justify-content: center;
     align-content:center;
 }
@@ -16,16 +20,19 @@ nav {
 .split {
     display:flex;
     justify-content:space-between;
+    gap:5vh;
 }
 
 
 .sketchpad {
     border:1px solid black;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(16,1fr);
+    grid-template-columns: repeat(16,1fr);
+    width:500px;
+    height:500px;
 }
 
-.sketchBox {
-    
+nav button {
+    padding:20px;
 }
